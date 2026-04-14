@@ -3,7 +3,8 @@ let jumlah = document.getElementById("jumlah");
 let keterangan = document.getElementById("keterangan");
 function simpan(){
     console.log(namabarang.value)
-    console.log(namabarang.value)
+    console.log(jumlah.value)
+    console.log(keterangan.value)
         
     // localStorage.setItem("npm", npm.value)
     // localStorage.setItem("nama", nama.value)
@@ -45,11 +46,13 @@ function tampil(){
     hasil.forEach(element => {
         //console.log(element)
         document.getElementById("list-mhs").innerHTML += `<div class ="col-lg-4 col-md-6" >
+        <div class ="card p3- mb-3 border-primary">    
         <h4 class ="text-danger">${element.keterangan}</h4><class ="text-primary">${element.jumlah}</><h6 class ="text-danger"> ${element.namabarang}</h6> 
+        </div>
         </div>`
         
 
     });
 }
 //jalankan fuction tampil()
-tampil()
+tampil();
