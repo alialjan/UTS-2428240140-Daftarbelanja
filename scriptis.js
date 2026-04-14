@@ -22,7 +22,7 @@ function simpan(){
     data.push({
         namabarang: namabarang.value,
         jumlah: jumlah.value,
-        keterangan: keterangan.value
+        keterangan: keterangan.value,
 
     })
     console.log(data)
